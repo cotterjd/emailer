@@ -9,12 +9,13 @@ const
 
 	nil = null;
 
-exports.send = function send(email, subject, body, callback){
+exports.send = function send(email, subject, body, attachment, callback){
     var mailOptions = {
         from: from,  
         to: email,
         subject: subject,
-        html: body
+        html: body,
+				attachments: attachment ? [attachment] : []
     };
 
     transport.sendMail(mailOptions, function(error, info){
