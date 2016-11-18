@@ -1,10 +1,11 @@
 const 
+	config = require('./config'),
 	nodemailer = require('nodemailer'),
-	user = 'fieldsavvytest',
-	pass = 'Retry123',
+	user = config.user,
+	pass = config.pass,
 	transporter = 'smtps://' + user + '@gmail.com:' + pass + '@smtp.gmail.com',
         transport = nodemailer.createTransport (transporter),
-	from = 'Jordan Cotter <jrdn.cttr@gmail.com>',
+	from = config.from,
 
 	nil = null;
 

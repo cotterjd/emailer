@@ -1,8 +1,9 @@
 const
 	mailer = require('./mailer.js'),
+	config = require('./config'),
 	log    = console.log,
-        logX   = function (e, r) { console.log (e, r); },
+  logX   = function (e, r) { console.log (e, r); },
 	
 	nil = null;
 
-mailer.send ('jrdn.cttr@gmail.com', "test", "did you get this", logX);
+mailer.send (config.email, "subject", "body", logX);
