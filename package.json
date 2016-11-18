@@ -1,0 +1,25 @@
+{
+  "name": "mailer",
+  "version": "0.0.0",
+  "description": "sends email",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cotterjd/mailer.git"
+  },
+  "keywords": [
+    "email",
+    "node"
+  ],
+  "author": "Jordan Cotter",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/cotterjd/mailer/issues"
+  },
+  "dependencies": {
+    "nodemailer": "~2.6.0"
+  }
+}
