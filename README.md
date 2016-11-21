@@ -3,7 +3,7 @@ simple node emailer with gmail
 
 create config file with user and pass or remove the config requires and add your gmail information directly in the code.  
 
-what your config file should look like: 
+what your config file should look something like this: 
 
 module.exports = {
   user: YOURGMAILUSER,
