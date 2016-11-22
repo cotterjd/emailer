@@ -21,7 +21,7 @@ const
   
   options = {
     to: 'bob@gmail.com',
-    from: 'joe@gmail.com',
+    from: 'Joe Smith <joe@gmail.com>',
     cc: 'sal@tds.net, sam@hotmail.com'
     subject: 'random question',
     body: 'wanna hang out this saturday',
