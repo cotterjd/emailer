@@ -1,7 +1,11 @@
 # gmailer
 simple node emailer with gmail
 
-npm install, create config file with user and pass, and create an index.js file that calls gmailer to send the email.  
+`git clone git@github.com:cotterjd/gmailer.git` clone repo <br>
+`npm install` install necessary packages<br>
+`vim config` (or nano config or any other text editor) see sample config <br>
+`vim index.js` see sample index <br>
+`node index.js` run program to send email
 
 ### sample config
 ```
