@@ -6,8 +6,8 @@ npm install, create config file with user and pass, and create an index.js file 
 ### sample config
 ```
 module.exports = {
-  user: 'YOURGMAILUSER',
-  pass: 'YOURGMAILPASSWORD'
+  user: 'joe',
+  pass: 'joespassword'
 }
 ```
 
