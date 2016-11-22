@@ -1,7 +1,7 @@
 # gmailer
 simple node emailer with gmail
 
-create config file with user and pass and create an index.js file that calls gmailer to send email.  
+npm install, create config file with user and pass, and create an index.js file that calls gmailer to send the email.  
 
 ### sample config
 ```
