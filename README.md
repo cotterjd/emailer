@@ -6,8 +6,8 @@ create config file with user and pass and create an index.js file that calls gma
 ### sample config
 ```
 module.exports = {
-  user: YOURGMAILUSER,
-  pass: YOURGMAILPASSWORD
+  user: 'YOURGMAILUSER',
+  pass: 'YOURGMAILPASSWORD'
 }
 ```
 
