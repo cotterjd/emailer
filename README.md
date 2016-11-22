@@ -2,9 +2,7 @@
 simple node emailer with gmail
 
 `git clone git@github.com:cotterjd/gmailer.git` clone repo <br>
-`cd gmailer` move into directory <br>
-`npm install` install necessary packages<br>
-`cd ..` go back to parent directory (you could make the config and index files in same directory if you change the `require`, but I'd prefer they be separate) <br>
+`npm --prefix ./gmailer install ./gmailer` installs necessary packages for gmailer without having to move into the directory<br>
 `vim config` (or nano config or any other text editor) see sample config <br>
 `vim index.js` see sample index <br>
 `node index.js` run program to send email
