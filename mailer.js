@@ -1,22 +1,21 @@
 const 
-	config = require('./config'),
+	config = require('../config'),
 	nodemailer = require('nodemailer'),
 	user = config.user,
 	pass = config.pass,
 	transporter = 'smtps://' + user + '@gmail.com:' + pass + '@smtp.gmail.com',
   transport = nodemailer.createTransport (transporter),
-	from = config.from,
 
 	nil = null;
 
-exports.send = function send(email, subject, body, attachment, callback){
+exports.send = function send(options, callback){
     var mailOptions = {
-        from: from,  
-        to: email,
-				cc: config.cc || ''
-        subject: subject,
-        html: body,
-				attachments: attachment ? [attachment] : []
+        from: options.from,  
+        to: options.to,
+				cc: options.cc,
+        subject: options.subject,
+        html: options.body,
+				attachments: options.attachments
     };
 
     transport.sendMail(mailOptions, function(error, info){
