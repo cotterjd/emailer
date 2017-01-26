@@ -4,7 +4,7 @@ const
 	user = config.user,
 	pass = config.pass,
 	transporter = 'smtps://' + user + '@gmail.com:' + pass + '@smtp.gmail.com',
-  transport = nodemailer.createTransport (transporter),
+  	transport = nodemailer.createTransport (transporter),
 
 	nil = null;
 
@@ -12,10 +12,10 @@ exports.send = function send(options, callback){
     var mailOptions = {
         from: options.from,  
         to: options.to,
-				cc: options.cc,
+	cc: options.cc,
         subject: options.subject,
         html: options.body,
-				attachments: options.attachments
+	attachments: options.attachments
     };
 
     transport.sendMail(mailOptions, function(error, info){
@@ -24,4 +24,3 @@ exports.send = function send(options, callback){
         return callback(error, info);
     });
 };
-
